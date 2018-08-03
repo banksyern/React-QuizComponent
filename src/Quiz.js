@@ -8,14 +8,14 @@ class Quiz extends Component {
     this.state = {
       quiz_position: 1
     };
-
+console.log(quizData);
   }
 
   render() {
     return (
     <div className="QuizQuestion">
       <div>
-        {quizData.quiz_questions.instruction_text}
+        {quizData.quiz_questions[0].instruction_text}
       </div>
     </div>
     )
